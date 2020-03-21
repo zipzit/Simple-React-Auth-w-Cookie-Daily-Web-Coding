@@ -89,6 +89,7 @@ const Routes = () => {
       {/* <Route path="/login" component={Login} /> */}
       {/* <Route path="/" render={() => <Redirect to="/login" />} />   total fail*/}
       <ProtectedLogin path="/login" component={Login} auth={Auth.auth} />
+      {/* <ProtectedLogin path="/" component={Login} auth={Auth.auth} />   still a fail*/}
       <ProtectedRoute
         path="/dashboard"
         component={Dashboard}
