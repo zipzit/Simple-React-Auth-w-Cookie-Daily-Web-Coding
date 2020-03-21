@@ -87,6 +87,7 @@ const Routes = () => {
   return (
     <Switch>
       {/* <Route path="/login" component={Login} /> */}
+      {/* <Route path="/" render={() => <Redirect to="/login" />} />   total fail*/}
       <ProtectedLogin path="/login" component={Login} auth={Auth.auth} />
       <ProtectedRoute
         path="/dashboard"
